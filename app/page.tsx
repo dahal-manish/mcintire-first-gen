@@ -22,7 +22,7 @@ export default function HomePage() {
       <div className="container mx-auto text-center relative z-10">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-shadow">McIntire First Generation Scholarship</h1>
         <p className="text-xl md:text-2xl mb-8 italic max-w-3xl mx-auto text-shadow">
-          "Imagine a world where underrepresented students have equal opportunities and a community that empowers them to become pioneers in their respective fields..."
+          &quot;Imagine a world where underrepresented students have equal opportunities and a community that empowers them to become pioneers in their respective fields...&quot;
         </p>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button asChild variant="outline" size="lg" className="hover:scale-[1.03] transition-transform duration-300">
@@ -54,7 +54,7 @@ export default function HomePage() {
               </div>
               <div className="bg-blue-gray p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Vision</h3>
-                <p>To "be a helping hand on the road to greatness" and create a community of first-generation and/or low-income business scholars who excel academically, professionally, and personally, through comprehensive support, mentorship, and financial assistance.</p>
+                <p>To &quot;be a helping hand on the road to greatness&quot; and create a community of first-generation and/or low-income business scholars who excel academically, professionally, and personally, through comprehensive support, mentorship, and financial assistance.</p>
               </div>
             </div>
           </div>

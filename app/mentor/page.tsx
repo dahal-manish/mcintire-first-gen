@@ -1,6 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import { UserPlus, Briefcase, GraduationCap, Users } from "lucide-react"
-import Image from "next/image"
 
 export default function MentorPage() {
   return (

@@ -1,7 +1,6 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Mail, Linkedin } from "lucide-react"
-import Image from "next/image"
 
 export default function ContactPage() {
   return (
