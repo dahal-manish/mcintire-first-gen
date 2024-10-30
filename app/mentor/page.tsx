@@ -10,7 +10,7 @@ export default function MentorPage() {
         <div className="max-w-3xl mx-auto space-y-8">
           <Card className="bg-blue-gray">
             <CardHeader>
-              <CardTitle className="text-2xl font-semibold text-blue-3">Who We're Looking For</CardTitle>
+              <CardTitle className="text-2xl font-semibold text-blue-3">Who We&apos;re Looking For</CardTitle>
               <CardDescription className="text-blue-2">Help shape the future of first-generation business leaders</CardDescription>
             </CardHeader>
             <CardContent>

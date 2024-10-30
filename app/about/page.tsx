@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 import { LEADERSHIP } from '@/constants/leadership'
 import ExecCard from '@/components/ExecCard'
 export default function AboutUs() {
