@@ -40,9 +40,9 @@ const Navbar = () => {
                                 <li key={link.id}>
                                     <Link 
                                         href={link.href} 
-                                        className={`hover:text-blue-1 transition-colors duration-200 ${
+                                        className={`hover:font-semibold transition-all duration-200 ${
                                             pathname === link.href 
-                                            ? 'font-semibold text-blue-1' 
+                                            ? 'font-semibold' 
                                             : 'font-normal'
                                         }`}
                                     >
