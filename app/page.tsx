@@ -1,29 +1,50 @@
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
-
+import ArticleCard from '@/components/ArticleCard'
+import { ARTICLES } from '@/constants/articles'
+import Image from 'next/image'
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
-
       <main>
-        <section className="bg-white text-blue-2 py-20">
-          <div className="container mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-4">McIntire First Generation Scholarship</h1>
-            <p className="text-xl mb-8 italic">
-              "Imagine a world where underrepresented students have equal opportunities and a community that empowers them to become pioneers in their respective fields..."
-            </p>
-            <div className="flex justify-center space-x-4">
-              <Button asChild>
-                <Link href="/apply" className="bg-gold text-white px-6 py-2 rounded-full text-lg font-semibold hover:bg-gold-dark transition duration-300">Apply Now</Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link href="/donate" className="border-2 border-gold text-gold px-6 py-2 rounded-full text-lg font-semibold hover:bg-gold transition duration-300">Donate</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+      <section className="relative bg-blue-3 text-white py-20 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/comm.png"
+          alt="McIntire School of Commerce"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          className="opacity-15"
+        />
+        <div className="absolute inset-0 bg-blue-2 opacity-40"></div>
+      </div>
+      <div className="container mx-auto text-center relative z-10">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-shadow">McIntire First Generation Scholarship</h1>
+        <p className="text-xl md:text-2xl mb-8 italic max-w-3xl mx-auto text-shadow">
+          "Imagine a world where underrepresented students have equal opportunities and a community that empowers them to become pioneers in their respective fields..."
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+          <Button asChild variant="outline" size="lg" className="hover:scale-[1.03] transition-transform duration-300">
+            <Link 
+              href="/apply" 
+              // className="font-medium"
+            >
+              Apply Now
+            </Link>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="hover:scale-[1.03] transition-transform duration-300">
+            <Link 
+              href="/donate" 
+            >
+              Donate
+            </Link>
+          </Button>
+        </div>
+      </div>
+    </section>
 
-        <section className="py-16 bg-white">
+        <section className="mt-8 bg-white text-blue-2">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center mb-8">Our Mission and Values</h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -31,7 +52,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-semibold mb-4">Mission</h3>
                 <p>Empower underprivileged first-generation students to aim for success in their respective business fields</p>
               </div>
-              <div className="bg-gray-100 p-6 rounded-lg">
+              <div className="bg-blue-gray p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Vision</h3>
                 <p>To "be a helping hand on the road to greatness" and create a community of first-generation and/or low-income business scholars who excel academically, professionally, and personally, through comprehensive support, mentorship, and financial assistance.</p>
               </div>
@@ -39,25 +60,17 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="py-16 bg-navy-blue text-white">
-          <div className="container mx-auto">
+        <section className="py-16 text-blue-2">
+          <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-8">MFGS in the News</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white text-navy-blue p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">UVA Today Article</h3>
-                <p>Coming soon...</p>
-              </div>
-              <div className="bg-white text-navy-blue p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">Sarrah's McIntire Article</h3>
-                <a href="https://experience.mcintire.virginia.edu/news/sarrah-abdulali-drawn-to-commerce-community/" className="text-gold hover:underline">Read More</a>
-              </div>
-              <div className="bg-white text-navy-blue p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">Manish's UVA Today</h3>
-                <a href="https://news.virginia.edu/content/every-hoo-has-story-taxing-hobby" className="text-gold hover:underline">Read More</a>
-              </div>
+              {ARTICLES.map((article) => (
+                <ArticleCard key={article.title} {...article} />
+              ))}
             </div>
           </div>
         </section>
+
       </main>
     </div>
   )
