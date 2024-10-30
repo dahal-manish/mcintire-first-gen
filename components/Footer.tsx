@@ -2,7 +2,7 @@ const Footer = () => {
     return (
         <footer className="bg-blue-2 text-white py-8">
             <div className="container mx-auto text-center">
-                <p>&copy; 2024 McIntire First Generation Scholarship. All rights reserved.</p>
+                <p>&copy; 2024 McIntire First Generation Scholarship. All rights reserved. <span className="italic">Website by <a href="https://www.bai-uva.org" className="underline" target="_blank" rel="noopener noreferrer">BAI</a></span></p>
                 {/* <div className="mt-4">
                     <a href="mailto:manish.dahal@virginia.edu" className="text-gold hover:underline mr-4">Manish Dahal</a>
                     <a href="mailto:ssa4ec@virginia.edu" className="text-gold hover:underline">Sarrah Abdulali</a>

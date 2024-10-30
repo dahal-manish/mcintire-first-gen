@@ -56,15 +56,15 @@ export default function DonatePage() {
             <p className="mb-4">Your contributions make a significant impact on the lives of our scholars:</p>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <Users className="mr-2 h-5 w-5 text-blue-3 mt-1" />
+                <Users className="mr-2 h-5 w-5 text-blue-3 mt-1 min-w-[1.25rem] min-h-[1.25rem]" />
                 <span>Funds go directly to recipients through Student Financial Services.</span>
               </li>
               <li className="flex items-start">
-                <CalendarClock className="mr-2 h-5 w-5 text-blue-3 mt-1" />
+                <CalendarClock className="mr-2 h-5 w-5 text-blue-3 mt-1 min-w-[1.25rem] min-h-[1.25rem]" />
                 <span>We work with recipients to provide the scholarship in a way that best suits their needs, even for those with full financial aid from UVA.</span>
               </li>
               <li className="flex items-start">
-                <DollarSign className="mr-2 h-5 w-5 text-blue-3 mt-1" />
+                <DollarSign className="mr-2 h-5 w-5 text-blue-3 mt-1 min-w-[1.25rem] min-h-[1.25rem]" />
                 <span>Recipients are encouraged to use the funds for business-related costs that lessen the burden of being a first-generation student, such as:</span>
               </li>
             </ul>
