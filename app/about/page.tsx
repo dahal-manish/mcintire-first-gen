@@ -35,7 +35,7 @@ export default function AboutUs() {
         
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-blue-2 mb-4">Our Founders</h2>
-          <div className="flex justify-start gap-12">
+          <div className="flex flex-col sm:flex-row justify-start gap-6">
             {LEADERSHIP.map((leader) => (
               <ExecCard key={leader.id} leader={leader} />
             ))}

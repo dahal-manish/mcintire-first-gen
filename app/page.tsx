@@ -24,11 +24,10 @@ export default function HomePage() {
         <p className="text-xl md:text-2xl mb-8 italic max-w-3xl mx-auto text-shadow">
           &quot;Imagine a world where underrepresented students have equal opportunities and a community that empowers them to become pioneers in their respective fields...&quot;
         </p>
-        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 max-w-md mx-auto">
           <Button asChild variant="outline" size="lg" className="hover:scale-[1.03] transition-transform duration-300">
             <Link 
               href="/apply" 
-              // className="font-medium"
             >
               Apply Now
             </Link>

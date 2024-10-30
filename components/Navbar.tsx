@@ -55,7 +55,7 @@ const Navbar = () => {
 
                     {/* Mobile Menu Button */}
                     <Button
-                        variant="ghost"
+                        variant="default"
                         size="icon"
                         className="md:hidden"
                         onClick={() => setIsOpen(!isOpen)}
@@ -75,14 +75,14 @@ const Navbar = () => {
                         isOpen ? "max-h-96 pb-4" : "max-h-0"
                     }`}
                 >
-                    <nav className="flex flex-col space-y-4">
+                    <nav className="flex flex-col">
                         {NAV_LINKS.map((link) => (
                             <Link
                                 key={link.id}
                                 href={link.href}
-                                className={`px-2 py-1 rounded-md transition-colors duration-200 ${
+                                className={`px-2 py-3 rounded-md transition-colors duration-200 text-white ${
                                     pathname === link.href
-                                    ? 'font-semibold bg-blue-3 text-blue-1'
+                                    ? 'font-semibold bg-blue-3'
                                     : 'font-normal hover:bg-blue-3'
                                 }`}
                             >
