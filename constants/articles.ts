@@ -7,7 +7,7 @@ export const ARTICLES = [
         link: "https://news.virginia.edu/content/how-one-call-forged-unique-uva-bond-and-sparked-opportunity-first-generation-students",
     },
     {
-        title: "Sarrah Abdulali's McIntire Article",
+        title: "Drawn to Commerce and Community",
         description: "Sarrah Abdulali (McIntire '24) shares her journey",
         image: "/articles/sarrah-uva-today.jpg",
         imageAlt: "Sarrah Abdulali smiling in a brown sweater",
