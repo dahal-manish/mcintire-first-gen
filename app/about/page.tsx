@@ -13,7 +13,7 @@ export default function AboutUs() {
             The McIntire First Generation Scholarship is designed to reduce the cost of attending UVA, but more importantly, to provide a community that equips and emboldens students to succeed in business and make a lasting impact on their communities at UVA and beyond.
           </p>
           <p className="text-blue-1 mb-4">
-            Recipients will have access to a robust mentorship program with alumni working in Consulting, Investment Banking, Technology, Private Equity, Venture Capital, and more.
+            recipients will have access to a robust mentorship program with alumni working in Consulting, Investment Banking, Technology, Private Equity, Venture Capital, and more.
           </p>
         </section>
         
