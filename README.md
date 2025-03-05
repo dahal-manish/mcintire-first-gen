@@ -1,1 +1,1 @@
-// to run locally pnpm install and then pnpm dev
+to run locally, pnpm install and then pnpm dev
