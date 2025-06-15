@@ -50,7 +50,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="mt-8 bg-white text-blue-2">
+        <section className="my-16 bg-white text-blue-2">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center mb-8">
               Our Mission and Values
@@ -77,25 +77,20 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="py-16 bg-blue-gray text-blue-2">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8">
-              Recent Highlights
-            </h2>
-            <div className="max-w-4xl mx-auto text-center">
-              <p className="text-lg mb-6">
-                Our founder, Manish, spoke at the UVA Hoos First reception—an
-                important step in raising visibility across UVA.{" "}
-                <a
-                  href="https://www.linkedin.com/posts/manish-dahal_last-month-i-had-the-privilege-of-addressing-activity-7330581843894751232-3bxA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADFwD84BslFp7pOPGeumRENNJM7m5lBwTdE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-3 hover:underline font-semibold"
-                >
-                  Check out his takeaways here.
-                </a>
-              </p>
-            </div>
+        <section className="py-16 bg-blue-50 text-blue-2">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-lg mb-4">
+              Our founder, Manish, spoke at the UVA Hoos First reception—an
+              important step in raising visibility across UVA.
+            </p>
+            <a
+              href="https://www.linkedin.com/posts/manish-dahal_last-month-i-had-the-privilege-of-addressing-activity-7330581843894751232-3bxA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADFwD84BslFp7pOPGeumRENNJM7m5lBwTdE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-3 hover:underline font-medium"
+            >
+              Check out his takeaways here →
+            </a>
           </div>
         </section>
 
