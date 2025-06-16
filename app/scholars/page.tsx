@@ -7,7 +7,7 @@ export default function OurScholarsPage() {
       <main className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-blue-3 mb-4">
-            Meet the 2025 Cohort
+            Meet the 2024 Cohort
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Our inaugural cohort of scholars represents the next generation of
